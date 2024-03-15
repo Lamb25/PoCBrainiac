@@ -1,0 +1,19 @@
+# Unnecesary Files
+*.a
+*.dll
+*.lib
+*.o
+*.d
+*.ico
+*.rc
+*.res
+MakeFile
+user.config
+
+# Unnecesary Directories
+bin/
+Debug/
+MINGW32_NT-6.2/
+cache/
+msvs/
+
