@@ -27,12 +27,12 @@
             "CenterY": 75.0,
             "Radius": 65.0,
             "LineWidth": 20.0,
-            "StartAngle": -110.0,
-            "EndAngle": -10.0,
+            "StartAngle": -120.0,
+            "EndAngle": 120.0,
             "CapPrecision": "Butt",
             "FileNameBackground": "__generated\\alternate_theme_images_widgets_circleprogress_backgrounds_medium.png",
             "ProgressRangeMax": 100,
-            "ProgressInitialValue": 60
+            "ProgressInitialValue": 1
           },
           {
             "Type": "CircleProgress",
@@ -49,11 +49,12 @@
             "CenterY": 75.0,
             "Radius": 65.0,
             "LineWidth": 20.0,
-            "EndAngle": 360.0,
+            "StartAngle": -120.0,
+            "EndAngle": 120.0,
             "CapPrecision": "Butt",
             "FileNameBackground": "__generated\\alternate_theme_images_widgets_circleprogress_backgrounds_medium.png",
             "ProgressRangeMax": 100,
-            "ProgressInitialValue": 60
+            "ProgressInitialValue": 1
           }
         ],
         "Interactions": []
