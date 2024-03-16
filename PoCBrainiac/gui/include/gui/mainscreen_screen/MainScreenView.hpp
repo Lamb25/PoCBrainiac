@@ -13,6 +13,10 @@ public:
     virtual void tearDownScreen();
     virtual void handleTickEvent();
 
+private:
+    void setSpeedoValue();
+    void setTacoValue();
+
 protected:
     bool increase = true;
 };

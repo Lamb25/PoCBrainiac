@@ -24,12 +24,12 @@ MainScreenViewBase::MainScreenViewBase()
     crcProg_Tacometer.setCenter(75, 75);
     crcProg_Tacometer.setRadius(65);
     crcProg_Tacometer.setLineWidth(20);
-    crcProg_Tacometer.setStartEndAngle(-110, -10);
+    crcProg_Tacometer.setStartEndAngle(-120, 120);
     crcProg_Tacometer.setCapPrecision(180);
     crcProg_Tacometer.setBackground(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_CIRCLEPROGRESS_BACKGROUNDS_MEDIUM_ID));
     crcProg_TacometerPainter.setColor(touchgfx::Color::getColorFromRGB(0, 240, 255));
     crcProg_Tacometer.setPainter(crcProg_TacometerPainter);
-    crcProg_Tacometer.setValue(60);
+    crcProg_Tacometer.setValue(1);
     add(crcProg_Tacometer);
 
     crcProg_Speedometer.setXY(200, 61);
@@ -38,12 +38,12 @@ MainScreenViewBase::MainScreenViewBase()
     crcProg_Speedometer.setCenter(75, 75);
     crcProg_Speedometer.setRadius(65);
     crcProg_Speedometer.setLineWidth(20);
-    crcProg_Speedometer.setStartEndAngle(0, 360);
+    crcProg_Speedometer.setStartEndAngle(-120, 120);
     crcProg_Speedometer.setCapPrecision(180);
     crcProg_Speedometer.setBackground(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_CIRCLEPROGRESS_BACKGROUNDS_MEDIUM_ID));
     crcProg_SpeedometerPainter.setColor(touchgfx::Color::getColorFromRGB(0, 240, 255));
     crcProg_Speedometer.setPainter(crcProg_SpeedometerPainter);
-    crcProg_Speedometer.setValue(60);
+    crcProg_Speedometer.setValue(1);
     add(crcProg_Speedometer);
 }
 
