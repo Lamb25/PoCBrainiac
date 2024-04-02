@@ -1,4 +1,5 @@
 #include <gui/mainscreen_screen/MainScreenView.hpp>
+#include <string>
 
 MainScreenView::MainScreenView()
 {
@@ -19,6 +20,7 @@ void MainScreenView::handleTickEvent()
 {
     setSpeedoValue();
     setTacoValue();
+    setPRNDLValue();
 }
 
 void MainScreenView::setSpeedoValue()
@@ -87,4 +89,12 @@ void MainScreenView::setTacoValue()
 
     crcProg_Tacometer.setValue(nextValue);
     crcProg_Tacometer.invalidate();
+}
+
+void MainScreenView::setPRNDLValue()
+{
+    Unicode::snprintf(txt_PRNDLBuffer, TXT_PRNDL_SIZE, "%s", "L");
+    txt_PRNDL.setWildcard(txt_PRNDLBuffer);
+    txt_PRNDL.resizeToCurrentText();
+    txt_PRNDL.invalidate();
 }

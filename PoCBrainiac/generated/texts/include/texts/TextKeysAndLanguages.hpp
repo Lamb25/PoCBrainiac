@@ -12,6 +12,8 @@ enum LANGUAGES
 
 enum TEXTS
 {
+    T_PRNDL_WILDCARD,
+    T_PRNDL_DEFAULT,
     NUMBER_OF_TEXT_KEYS
 };
 

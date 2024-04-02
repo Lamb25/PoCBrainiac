@@ -5,6 +5,7 @@
 #include <touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp>
 #include <touchgfx/Color.hpp>
 #include <images/BitmapDatabase.hpp>
+#include <texts/TextKeysAndLanguages.hpp>
 
 MainScreenViewBase::MainScreenViewBase()
 {
@@ -45,6 +46,15 @@ MainScreenViewBase::MainScreenViewBase()
     crcProg_Speedometer.setPainter(crcProg_SpeedometerPainter);
     crcProg_Speedometer.setValue(1);
     add(crcProg_Speedometer);
+
+    txt_PRNDL.setXY(99, 126);
+    txt_PRNDL.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    txt_PRNDL.setLinespacing(0);
+    Unicode::snprintf(txt_PRNDLBuffer, TXT_PRNDL_SIZE, "%s", touchgfx::TypedText(T_PRNDL_WILDCARD).getText());
+    txt_PRNDL.setWildcard(txt_PRNDLBuffer);
+    txt_PRNDL.resizeToCurrentText();
+    txt_PRNDL.setTypedText(touchgfx::TypedText(T_PRNDL_DEFAULT));
+    add(txt_PRNDL);
 }
 
 MainScreenViewBase::~MainScreenViewBase()
