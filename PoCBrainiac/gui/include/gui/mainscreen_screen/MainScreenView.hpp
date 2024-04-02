@@ -16,6 +16,7 @@ public:
 private:
     void setSpeedoValue();
     void setTacoValue();
+    void setPRNDLValue();
 
 protected:
     bool increase = true;

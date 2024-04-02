@@ -11,6 +11,7 @@
 #include <touchgfx/widgets/Image.hpp>
 #include <touchgfx/containers/progress_indicators/CircleProgress.hpp>
 #include <touchgfx/widgets/canvas/PainterRGB888.hpp>
+#include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 
 class MainScreenViewBase : public touchgfx::View<MainScreenPresenter>
 {
@@ -33,6 +34,13 @@ protected:
     touchgfx::PainterRGB888 crcProg_TacometerPainter;
     touchgfx::CircleProgress crcProg_Speedometer;
     touchgfx::PainterRGB888 crcProg_SpeedometerPainter;
+    touchgfx::TextAreaWithOneWildcard txt_PRNDL;
+
+    /*
+     * Wildcard Buffers
+     */
+    static const uint16_t TXT_PRNDL_SIZE = 2;
+    touchgfx::Unicode::UnicodeChar txt_PRNDLBuffer[TXT_PRNDL_SIZE];
 
 private:
 

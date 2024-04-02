@@ -55,6 +55,27 @@
             "FileNameBackground": "__generated\\alternate_theme_images_widgets_circleprogress_backgrounds_medium.png",
             "ProgressRangeMax": 100,
             "ProgressInitialValue": 1
+          },
+          {
+            "Type": "TextArea",
+            "Name": "txt_PRNDL",
+            "X": 99,
+            "Y": 126,
+            "Width": 12,
+            "Height": 20,
+            "TextId": "prndl_Default",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "prndl_Wildcard",
+              "UseBuffer": true,
+              "BufferSize": 2
+            }
           }
         ],
         "Interactions": []
