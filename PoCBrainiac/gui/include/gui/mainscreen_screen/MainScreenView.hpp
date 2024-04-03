@@ -17,6 +17,7 @@ private:
     void setSpeedoValue();
     void setTacoValue();
     void setPRNDLValue();
+    void setOdometerValue();
 
 protected:
     bool increase = true;

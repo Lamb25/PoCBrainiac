@@ -35,12 +35,15 @@ protected:
     touchgfx::CircleProgress crcProg_Speedometer;
     touchgfx::PainterRGB888 crcProg_SpeedometerPainter;
     touchgfx::TextAreaWithOneWildcard txt_PRNDL;
+    touchgfx::TextAreaWithOneWildcard txt_Odometer;
 
     /*
      * Wildcard Buffers
      */
     static const uint16_t TXT_PRNDL_SIZE = 2;
     touchgfx::Unicode::UnicodeChar txt_PRNDLBuffer[TXT_PRNDL_SIZE];
+    static const uint16_t TXT_ODOMETER_SIZE = 7;
+    touchgfx::Unicode::UnicodeChar txt_OdometerBuffer[TXT_ODOMETER_SIZE];
 
 private:
 

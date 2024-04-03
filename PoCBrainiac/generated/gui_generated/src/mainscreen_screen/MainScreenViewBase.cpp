@@ -19,7 +19,7 @@ MainScreenViewBase::MainScreenViewBase()
     backGround.setBitmap(touchgfx::Bitmap(BITMAP_CONTROLS_BACKGROUND_ID));
     add(backGround);
 
-    crcProg_Tacometer.setXY(30, 61);
+    crcProg_Tacometer.setXY(30, 41);
     crcProg_Tacometer.setProgressIndicatorPosition(0, 0, 150, 150);
     crcProg_Tacometer.setRange(0, 100);
     crcProg_Tacometer.setCenter(75, 75);
@@ -33,7 +33,7 @@ MainScreenViewBase::MainScreenViewBase()
     crcProg_Tacometer.setValue(1);
     add(crcProg_Tacometer);
 
-    crcProg_Speedometer.setXY(200, 61);
+    crcProg_Speedometer.setXY(200, 41);
     crcProg_Speedometer.setProgressIndicatorPosition(0, 0, 150, 150);
     crcProg_Speedometer.setRange(0, 100);
     crcProg_Speedometer.setCenter(75, 75);
@@ -47,7 +47,7 @@ MainScreenViewBase::MainScreenViewBase()
     crcProg_Speedometer.setValue(1);
     add(crcProg_Speedometer);
 
-    txt_PRNDL.setXY(99, 126);
+    txt_PRNDL.setXY(99, 106);
     txt_PRNDL.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     txt_PRNDL.setLinespacing(0);
     Unicode::snprintf(txt_PRNDLBuffer, TXT_PRNDL_SIZE, "%s", touchgfx::TypedText(T_PRNDL_WILDCARD).getText());
@@ -55,6 +55,15 @@ MainScreenViewBase::MainScreenViewBase()
     txt_PRNDL.resizeToCurrentText();
     txt_PRNDL.setTypedText(touchgfx::TypedText(T_PRNDL_DEFAULT));
     add(txt_PRNDL);
+
+    txt_Odometer.setXY(151, 191);
+    txt_Odometer.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    txt_Odometer.setLinespacing(0);
+    Unicode::snprintf(txt_OdometerBuffer, TXT_ODOMETER_SIZE, "%s", touchgfx::TypedText(T_ODOMETER_WILDCARD).getText());
+    txt_Odometer.setWildcard(txt_OdometerBuffer);
+    txt_Odometer.resizeToCurrentText();
+    txt_Odometer.setTypedText(touchgfx::TypedText(T_ODOMETER_DEFAULT));
+    add(txt_Odometer);
 }
 
 MainScreenViewBase::~MainScreenViewBase()
