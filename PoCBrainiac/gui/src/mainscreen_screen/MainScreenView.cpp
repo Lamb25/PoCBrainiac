@@ -104,7 +104,7 @@ void MainScreenView::setPRNDLValue()
 
 void MainScreenView::setOdometerValue()
 {
-    Unicode::snprintf(txt_OdometerBuffer, TXT_ODOMETER_SIZE, "%d", 123456);
+    Unicode::snprintf(txt_OdometerBuffer, TXT_ODOMETER_SIZE, "%d", 654321);
     txt_Odometer.setWildcard(txt_OdometerBuffer);
     txt_Odometer.resizeToCurrentText();
     txt_Odometer.invalidate();
