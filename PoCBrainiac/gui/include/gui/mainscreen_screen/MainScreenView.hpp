@@ -3,7 +3,6 @@
 
 #include <gui_generated/mainscreen_screen/MainScreenViewBase.hpp>
 #include <gui/mainscreen_screen/MainScreenPresenter.hpp>
-#include <touchgfx/hal/OSWrappers.hpp>
 
 class MainScreenView : public MainScreenViewBase
 {

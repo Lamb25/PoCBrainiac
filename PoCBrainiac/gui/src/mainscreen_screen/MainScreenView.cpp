@@ -1,7 +1,5 @@
 #include <gui/mainscreen_screen/MainScreenView.hpp>
 #include <string>
-#include <iostream>
-#include <thread>
 
 MainScreenView::MainScreenView()
 {
