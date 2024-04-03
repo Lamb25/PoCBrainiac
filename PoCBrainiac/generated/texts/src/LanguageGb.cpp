@@ -10,6 +10,8 @@ KEEP extern const uint32_t indicesGb[] TEXT_LOCATION_FLASH_ATTRIBUTE;
 // Remap all strings
 TEXT_LOCATION_FLASH_PRAGMA
 KEEP extern const uint32_t indicesGb[] TEXT_LOCATION_FLASH_ATTRIBUTE = {
-    2, // T_PRNDL_WILDCARD: "P"
+    2, // T_ODOMETER_WILDCARD: "000000"
+    0, // T_ODOMETER_DEFAULT: "<>"
+    9, // T_PRNDL_WILDCARD: "P"
     0  // T_PRNDL_DEFAULT: "<>"
 };

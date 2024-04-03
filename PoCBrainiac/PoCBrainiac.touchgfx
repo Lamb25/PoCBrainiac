@@ -16,7 +16,7 @@
             "Type": "CircleProgress",
             "Name": "crcProg_Tacometer",
             "X": 30,
-            "Y": 61,
+            "Y": 41,
             "Width": 150,
             "Height": 150,
             "Color": {
@@ -38,7 +38,7 @@
             "Type": "CircleProgress",
             "Name": "crcProg_Speedometer",
             "X": 200,
-            "Y": 61,
+            "Y": 41,
             "Width": 150,
             "Height": 150,
             "Color": {
@@ -60,7 +60,7 @@
             "Type": "TextArea",
             "Name": "txt_PRNDL",
             "X": 99,
-            "Y": 126,
+            "Y": 106,
             "Width": 12,
             "Height": 20,
             "TextId": "prndl_Default",
@@ -75,6 +75,27 @@
               "TextId": "prndl_Wildcard",
               "UseBuffer": true,
               "BufferSize": 2
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "txt_Odometer",
+            "X": 151,
+            "Y": 191,
+            "Width": 78,
+            "Height": 20,
+            "TextId": "odometer_Default",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "odometer_Wildcard",
+              "UseBuffer": true,
+              "BufferSize": 7
             }
           }
         ],

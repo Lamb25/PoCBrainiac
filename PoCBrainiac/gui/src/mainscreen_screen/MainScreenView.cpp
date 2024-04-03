@@ -1,5 +1,7 @@
 #include <gui/mainscreen_screen/MainScreenView.hpp>
 #include <string>
+#include <iostream>
+#include <thread>
 
 MainScreenView::MainScreenView()
 {
@@ -21,6 +23,7 @@ void MainScreenView::handleTickEvent()
     setSpeedoValue();
     setTacoValue();
     setPRNDLValue();
+    setOdometerValue();
 }
 
 void MainScreenView::setSpeedoValue()
@@ -97,4 +100,12 @@ void MainScreenView::setPRNDLValue()
     txt_PRNDL.setWildcard(txt_PRNDLBuffer);
     txt_PRNDL.resizeToCurrentText();
     txt_PRNDL.invalidate();
+}
+
+void MainScreenView::setOdometerValue()
+{
+    Unicode::snprintf(txt_OdometerBuffer, TXT_ODOMETER_SIZE, "%d", 123456);
+    txt_Odometer.setWildcard(txt_OdometerBuffer);
+    txt_Odometer.resizeToCurrentText();
+    txt_Odometer.invalidate();
 }
