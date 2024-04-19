@@ -19,6 +19,8 @@ private:
     void setPRNDLValue();
     void setOdometerValue();
 
+    int tickCounter = 0;
+
 protected:
     bool increase = true;
 };
