@@ -3,7 +3,6 @@
     "Screens": [
       {
         "Name": "MainScreen",
-        "CanvasBufferSize": 5700,
         "Components": [
           {
             "Type": "Image",
@@ -13,54 +12,10 @@
             "RelativeFilename": "controls_background.png"
           },
           {
-            "Type": "CircleProgress",
-            "Name": "crcProg_Tacometer",
-            "X": 30,
-            "Y": 41,
-            "Width": 150,
-            "Height": 150,
-            "Color": {
-              "Green": 240,
-              "Blue": 255
-            },
-            "CenterX": 75.0,
-            "CenterY": 75.0,
-            "Radius": 65.0,
-            "LineWidth": 20.0,
-            "StartAngle": -120.0,
-            "EndAngle": 120.0,
-            "CapPrecision": "Butt",
-            "FileNameBackground": "__generated\\alternate_theme_images_widgets_circleprogress_backgrounds_medium.png",
-            "ProgressRangeMax": 100,
-            "ProgressInitialValue": 1
-          },
-          {
-            "Type": "CircleProgress",
-            "Name": "crcProg_Speedometer",
-            "X": 200,
-            "Y": 41,
-            "Width": 150,
-            "Height": 150,
-            "Color": {
-              "Green": 240,
-              "Blue": 255
-            },
-            "CenterX": 75.0,
-            "CenterY": 75.0,
-            "Radius": 65.0,
-            "LineWidth": 20.0,
-            "StartAngle": -120.0,
-            "EndAngle": 120.0,
-            "CapPrecision": "Butt",
-            "FileNameBackground": "__generated\\alternate_theme_images_widgets_circleprogress_backgrounds_medium.png",
-            "ProgressRangeMax": 100,
-            "ProgressInitialValue": 1
-          },
-          {
             "Type": "TextArea",
             "Name": "txt_PRNDL",
-            "X": 99,
-            "Y": 106,
+            "X": 184,
+            "Y": 157,
             "Width": 12,
             "Height": 20,
             "TextId": "prndl_Default",
@@ -97,6 +52,59 @@
               "UseBuffer": true,
               "BufferSize": 7
             }
+          },
+          {
+            "Type": "Gauge",
+            "Name": "gauge_Taco",
+            "Width": 184,
+            "Height": 184,
+            "FileNameBackground": "__generated\\alternate_theme_images_widgets_gauge_small_backgrounds_active.png",
+            "RotationCenterX": 92.0,
+            "RotationCenterY": 92.0,
+            "StartAngle": -90.0,
+            "EndAngle": 89.0,
+            "RangeMax": 100.0,
+            "InitialValue": 1.0,
+            "Easing": "Linear",
+            "EasingOption": "In",
+            "FileNameNeedle": "__generated\\alternate_theme_images_widgets_gauge_small_needles_rough.png",
+            "NeedleRotationCenterX": 8.0,
+            "NeedleRotationCenterY": 53.0,
+            "NeedleMovingRenderingAlgorithm": "Bilinear Interpolation",
+            "NeedleSteadyRenderingAlgorithm": "Bilinear Interpolation",
+            "ArcColor": {
+              "Red": 20,
+              "Green": 151,
+              "Blue": 197
+            },
+            "ArcCapStyle": "Butt"
+          },
+          {
+            "Type": "Gauge",
+            "Name": "gauge_Speedo",
+            "X": 196,
+            "Width": 184,
+            "Height": 184,
+            "FileNameBackground": "__generated\\alternate_theme_images_widgets_gauge_small_backgrounds_active.png",
+            "RotationCenterX": 92.0,
+            "RotationCenterY": 92.0,
+            "StartAngle": -90.0,
+            "EndAngle": 89.0,
+            "RangeMax": 100.0,
+            "InitialValue": 1.0,
+            "Easing": "Linear",
+            "EasingOption": "In",
+            "FileNameNeedle": "__generated\\alternate_theme_images_widgets_gauge_small_needles_rough.png",
+            "NeedleRotationCenterX": 8.0,
+            "NeedleRotationCenterY": 53.0,
+            "NeedleMovingRenderingAlgorithm": "Bilinear Interpolation",
+            "NeedleSteadyRenderingAlgorithm": "Bilinear Interpolation",
+            "ArcColor": {
+              "Red": 20,
+              "Green": 151,
+              "Blue": 197
+            },
+            "ArcCapStyle": "Butt"
           }
         ],
         "Interactions": []

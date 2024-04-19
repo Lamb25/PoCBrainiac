@@ -3,7 +3,7 @@
 
 MainScreenView::MainScreenView()
 {
-
+    tickCounter = 0;
 }
 
 void MainScreenView::setupScreen()
@@ -26,70 +26,12 @@ void MainScreenView::handleTickEvent()
 
 void MainScreenView::setSpeedoValue()
 {
-    int max = 0;
-    int min = 0;
-    int nextValue = 0;
-    int currentValue = crcProg_Speedometer.getValue();
-
-    crcProg_Speedometer.getRange(min, max);
-    
-    if (currentValue == min)
-    {
-        increase = true;
-    }
-
-    else if (currentValue == max)
-    {
-        increase = false;
-    }
-
-
-    if (increase)
-    {
-        nextValue = currentValue + 1;
-    }
-
-    else
-    {
-        nextValue = currentValue - 1;
-    }
-
-    crcProg_Speedometer.setValue(nextValue);
-    crcProg_Speedometer.invalidate();
+    gauge_Speedo.updateValue(gauge_Speedo.getValue() + 1, 0); 
 }
 
 void MainScreenView::setTacoValue()
 {
-    int max = 0;
-    int min = 0;
-    int nextValue = 0;
-    int currentValue = crcProg_Tacometer.getValue();
-
-    crcProg_Tacometer.getRange(min, max);
-
-    if (currentValue == min)
-    {
-        increase = true;
-    }
-
-    else if (currentValue == max)
-    {
-        increase = false;
-    }
-
-
-    if (increase)
-    {
-        nextValue = currentValue + 1;
-    }
-
-    else
-    {
-        nextValue = currentValue - 1;
-    }
-
-    crcProg_Tacometer.setValue(nextValue);
-    crcProg_Tacometer.invalidate();
+    gauge_Taco.updateValue(gauge_Taco.getValue() + 2, 0);
 }
 
 void MainScreenView::setPRNDLValue()

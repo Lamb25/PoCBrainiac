@@ -9,9 +9,8 @@
 #include <gui/mainscreen_screen/MainScreenPresenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/Image.hpp>
-#include <touchgfx/containers/progress_indicators/CircleProgress.hpp>
-#include <touchgfx/widgets/canvas/PainterRGB888.hpp>
 #include <touchgfx/widgets/TextAreaWithWildcard.hpp>
+#include <touchgfx/widgets/Gauge.hpp>
 
 class MainScreenViewBase : public touchgfx::View<MainScreenPresenter>
 {
@@ -30,12 +29,10 @@ protected:
      */
     touchgfx::Box __background;
     touchgfx::Image backGround;
-    touchgfx::CircleProgress crcProg_Tacometer;
-    touchgfx::PainterRGB888 crcProg_TacometerPainter;
-    touchgfx::CircleProgress crcProg_Speedometer;
-    touchgfx::PainterRGB888 crcProg_SpeedometerPainter;
     touchgfx::TextAreaWithOneWildcard txt_PRNDL;
     touchgfx::TextAreaWithOneWildcard txt_Odometer;
+    touchgfx::Gauge gauge_Taco;
+    touchgfx::Gauge gauge_Speedo;
 
     /*
      * Wildcard Buffers
@@ -46,12 +43,6 @@ protected:
     touchgfx::Unicode::UnicodeChar txt_OdometerBuffer[TXT_ODOMETER_SIZE];
 
 private:
-
-    /*
-     * Canvas Buffer Size
-     */
-    static const uint32_t CANVAS_BUFFER_SIZE = 5700;
-    uint8_t canvasBuffer[CANVAS_BUFFER_SIZE];
 
 };
 
